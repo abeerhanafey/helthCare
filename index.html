@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d9488" />
+  <title>Pharaoh AI | HealthCare Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">𓂀</div>
+        <div><strong data-ar="Pharaoh AI" data-en="Pharaoh AI">Pharaoh AI</strong><small>HealthCare Companion</small></div>
+      </div>
+      <div class="profile-mini">
+        <div class="avatar">☺</div>
+        <div><strong id="sidebarName">ضيفنا العزيز</strong><small data-ar="مساحة صحية تجريبية" data-en="Demo wellness space">مساحة صحية تجريبية</small></div>
+      </div>
+      <nav class="nav-menu" aria-label="التنقل الرئيسي">
+        <button class="nav-link active" data-page="dashboard"><span>⌂</span><b data-ar="الرئيسية" data-en="Dashboard">الرئيسية</b></button>
+        <button class="nav-link" data-page="profile"><span>♙</span><b data-ar="ملفي الصحي" data-en="My profile">ملفي الصحي</b></button>
+        <button class="nav-link" data-page="nutrition"><span>◉</span><b data-ar="التغذية" data-en="Nutrition">التغذية</b></button>
+        <button class="nav-link" data-page="fitness"><span>↗</span><b data-ar="النشاط والحركة" data-en="Activity">النشاط والحركة</b></button>
+        <button class="nav-link" data-page="skincare"><span>✿</span><b data-ar="العناية بالبشرة" data-en="Skincare">العناية بالبشرة</b></button>
+        <button class="nav-link" data-page="checker"><span>⌕</span><b data-ar="فحص المكونات" data-en="Ingredient checker">فحص المكونات</b></button>
+        <button class="nav-link" data-page="assistant"><span>✧</span><b data-ar="المساعد الصحي" data-en="AI assistant">المساعد الصحي</b></button>
+        <button class="nav-link" data-page="library"><span>▤</span><b data-ar="المكتبة الصحية" data-en="Health library">المكتبة الصحية</b></button>
+        <button class="nav-link" data-page="diseases"><span>𓋹</span><b>دليل الحالات الصحية</b></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-mini">🔒 <span data-ar="بيانات تجريبية — لا تدخل معلومات طبية حساسة" data-en="Demo only — don't enter sensitive health data">بيانات تجريبية — لا تدخل معلومات طبية حساسة</span></div>
+        <button class="nav-link" id="themeBtn"><span>◐</span><b data-ar="تغيير المظهر" data-en="Toggle theme">تغيير المظهر</b></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn" aria-label="فتح القائمة">☰</button>
+        <div><p class="eyebrow" data-ar="مساحتك للعادات الصحية" data-en="Your everyday wellness space">مساحتك للعادات الصحية</p><h1 id="pageTitle" data-ar="صباح الخير 👋" data-en="Good day 👋">صباح الخير 👋</h1></div>
+        <div class="top-actions">
+          <button class="soft-btn" id="langBtn">EN / ع</button>
+          <button class="icon-btn" id="themeTopBtn" aria-label="تغيير المظهر">◐</button>
+          <div class="top-avatar">☺</div>
+        </div>
+      </header>
+
+      <section class="page active" id="page-dashboard">
+        <div class="welcome-banner pharaoh-banner">
+          <div><span class="pill light-pill">𓂀 PHARAOH AI • SMART WELLNESS</span>
+            <h2 data-ar="حكمة المعرفة… لصحة أكثر وعيًا." data-en="Care for yourself, your way.">حكمة المعرفة… لصحة أكثر وعيًا.</h2>
+            <p data-ar="مساعدك للتثقيف الصحي، فهم المكونات، واكتشاف عادات يومية أكثر وعيًا — بمعلومات واضحة وحدود طبية مسؤولة." data-en="Track daily habits and explore general health education to support informed choices.">مساعدك للتثقيف الصحي، فهم المكونات، واكتشاف عادات يومية أكثر وعيًا — بمعلومات واضحة وحدود طبية مسؤولة.</p>
+            <button class="primary-btn" data-go="profile" data-ar="أكمل ملفك التجريبي" data-en="Set up your demo profile">أكمل ملفك التجريبي</button>
+          </div>
+          <div class="banner-art"><div class="sun"></div><div class="plant">✿</div><div class="heart">♡</div><div class="banner-card">✚<small data-ar="صحتك أولويتك" data-en="Your wellness matters">صحتك أولويتك</small></div></div>
+        </div>
+
+        <div class="section-heading"><div><h2 data-ar="ملخص اليوم" data-en="Today's overview">ملخص اليوم</h2><p data-ar="سجّل ما أنجزته — الأرقام هنا تجريبية وتخص إدخالاتك فقط." data-en="Log your habits — these demo numbers reflect only your entries.">سجّل ما أنجزته — الأرقام هنا تجريبية وتخص إدخالاتك فقط.</p></div><span class="date-chip" id="todayDate"></span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon aqua">💧</span><span class="trend">الماء</span></div><strong><span id="waterValue">0</span><small> / 8</small></strong><p data-ar="أكواب مسجلة" data-en="glasses logged">أكواب مسجلة</p><div class="progress"><i id="waterProgress"></i></div><button class="text-btn" id="addWater">+ إضافة كوب</button></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon blue">🌙</span><span class="trend">النوم</span></div><strong><span id="sleepValue">0</span><small> ساعة</small></strong><p data-ar="ساعات نوم مسجلة" data-en="hours logged">ساعات نوم مسجلة</p><div class="progress"><i id="sleepProgress"></i></div><button class="text-btn" data-go="dashboard" id="sleepBtn">تسجيل النوم</button></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon gold">🚶</span><span class="trend">الحركة</span></div><strong><span id="moveValue">0</span><small> دقيقة</small></strong><p data-ar="دقائق حركة مسجلة" data-en="movement minutes">دقائق حركة مسجلة</p><div class="progress"><i id="moveProgress"></i></div><button class="text-btn" data-go="fitness">تسجيل نشاط</button></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon pink">☺</span><span class="trend">المزاج</span></div><strong id="moodValue">—</strong><p data-ar="كيف تشعر اليوم؟" data-en="How are you feeling?">كيف تشعر اليوم؟</p><div class="mood-row"><button data-mood="😊">😊</button><button data-mood="😐">😐</button><button data-mood="😔">😔</button></div></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel habits-panel"><div class="panel-heading"><div><h3 data-ar="عادات اليوم" data-en="Today's habits">عادات اليوم</h3><p data-ar="اختر ما أنجزته اليوم" data-en="Check what you've completed">اختر ما أنجزته اليوم</p></div><span class="mini-badge" id="habitCount">0 / 4</span></div>
+            <div class="habit-list">
+              <label class="habit-item"><input type="checkbox" class="habit-check"><span class="habit-symbol">🥗</span><span><b data-ar="وجبة متوازنة" data-en="Balanced meal">وجبة متوازنة</b><small data-ar="استمتع بتنوع الأطعمة" data-en="Enjoy a variety of foods">استمتع بتنوع الأطعمة</small></span></label>
+              <label class="habit-item"><input type="checkbox" class="habit-check"><span class="habit-symbol">💧</span><span><b data-ar="شرب الماء بانتظام" data-en="Drink water regularly">شرب الماء بانتظام</b><small data-ar="وفق احتياجاتك وتعليمات مختصك" data-en="According to your needs and clinician's advice">وفق احتياجاتك وتعليمات مختصك</small></span></label>
+              <label class="habit-item"><input type="checkbox" class="habit-check"><span class="habit-symbol">🌿</span><span><b data-ar="استراحة وراحة ذهنية" data-en="Mindful break">استراحة وراحة ذهنية</b><small data-ar="امنح نفسك لحظة هدوء" data-en="Take a quiet moment">امنح نفسك لحظة هدوء</small></span></label>
+              <label class="habit-item"><input type="checkbox" class="habit-check"><span class="habit-symbol">🌙</span><span><b data-ar="الاستعداد لنوم مريح" data-en="Prepare for restful sleep">الاستعداد لنوم مريح</b><small data-ar="حافظ على روتين يناسبك" data-en="Keep a routine that works for you">حافظ على روتين يناسبك</small></span></label>
+            </div>
+          </article>
+          <article class="panel recommendation"><div class="panel-heading"><div><h3 data-ar="تذكير لطيف" data-en="A gentle reminder">تذكير لطيف</h3><p data-ar="معلومة عامة للعافية" data-en="A general wellness note">معلومة عامة للعافية</p></div><span class="sparkle">✧</span></div>
+            <div class="tip-illustration">🌱</div><h4 data-ar="التوازن أهم من الكمال" data-en="Balance over perfection">التوازن أهم من الكمال</h4><p data-ar="العادات الصغيرة القابلة للاستمرار قد تكون أسهل من التغييرات الكبيرة. اختر خطوة بسيطة تناسب يومك." data-en="Small, sustainable habits can be easier than major changes. Choose one simple step that fits your day.">العادات الصغيرة القابلة للاستمرار قد تكون أسهل من التغييرات الكبيرة. اختر خطوة بسيطة تناسب يومك.</p>
+            <small class="disclaimer" data-ar="هذه نصيحة عامة وليست توصية علاجية." data-en="General education, not a treatment recommendation.">هذه نصيحة عامة وليست توصية علاجية.</small>
+          </article>
+        </div>
+        <div class="panel quick-panel"><div><h3 data-ar="ابدأ من المكان الذي يناسبك" data-en="Start where it suits you">ابدأ من المكان الذي يناسبك</h3><p data-ar="كل الأدوات هنا تجريبية وتعمل داخل المتصفح." data-en="All tools here are demos that run in your browser.">كل الأدوات هنا تجريبية وتعمل داخل المتصفح.</p></div><div class="quick-actions"><button data-go="checker">⌕ <span data-ar="افحص المكونات" data-en="Check ingredients">افحص المكونات</span></button><button data-go="assistant">✧ <span data-ar="اسأل المساعد" data-en="Ask assistant">اسأل المساعد</span></button><button data-go="library">▤ <span data-ar="تعلّم أكثر" data-en="Learn more">تعلّم أكثر</span></button></div></div>
+      </section>
+
+      <section class="page" id="page-profile">
+        <div class="page-intro"><span class="pill">ملف تجريبي</span><h2 data-ar="ملفي الصحي" data-en="My health profile">ملفي الصحي</h2><p data-ar="يمكنك إدخال أي حالة صحية بكلماتك — لا توجد قائمة أمراض محددة." data-en="Enter any health condition in your own words — there is no fixed disease list.">يمكنك إدخال أي حالة صحية بكلماتك — لا توجد قائمة أمراض محددة.</p></div>
+        <form class="panel form-panel" id="profileForm">
+          <div class="form-grid">
+            <label><span data-ar="الاسم (اختياري)" data-en="Name (optional)">الاسم (اختياري)</span><input id="fullName" placeholder="مثال: سارة" maxlength="60"></label>
+            <label><span data-ar="العمر أو الفئة العمرية" data-en="Age or age range">العمر أو الفئة العمرية</span><input id="age" placeholder="مثال: 25 أو 20–30"></label>
+            <label><span data-ar="نوع البشرة" data-en="Skin type">نوع البشرة</span><select id="skinType"><option value="">غير محدد</option><option>دهنية / Oily</option><option>جافة / Dry</option><option>مختلطة / Combination</option><option>عادية / Normal</option><option>حساسة / Sensitive</option></select></label>
+            <label><span data-ar="مستوى النشاط المعتاد" data-en="Usual activity level">مستوى النشاط المعتاد</span><select id="activityLevel"><option>غير محدد</option><option>قليل</option><option>متوسط</option><option>نشط</option></select></label>
+          </div>
+          <label class="full-field"><span data-ar="الحالة أو الحالات الصحية (اكتب بحرية)" data-en="Medical condition(s) — free text">الحالة أو الحالات الصحية (اكتب بحرية)</span><textarea id="conditions" rows="3" placeholder="يمكنك كتابة أكثر من حالة، كل حالة في سطر..."></textarea></label>
+          <label class="full-field"><span data-ar="الحساسيات المعروفة" data-en="Known allergies">الحساسيات المعروفة</span><textarea id="allergies" rows="2" placeholder="مثال: الفول السوداني، العطور..."></textarea></label>
+          <label class="full-field"><span data-ar="التفضيلات الغذائية والقيود" data-en="Food preferences and restrictions">التفضيلات الغذائية والقيود</span><textarea id="foodPrefs" rows="2" placeholder="مثال: نباتي، تجنب مكوّن معين..."></textarea></label>
+          <label class="full-field"><span data-ar="قيود الحركة أو تعليمات المختص (اختياري)" data-en="Movement limitations or clinician instructions (optional)">قيود الحركة أو تعليمات المختص (اختياري)</span><textarea id="limitations" rows="2" placeholder="لا تدخل معلومات لا ترغب في حفظها في هذا النموذج التجريبي."></textarea></label>
+          <div class="form-actions"><button class="primary-btn" type="submit" data-ar="حفظ داخل الجلسة" data-en="Save for this session">حفظ داخل الجلسة</button><button class="outline-btn" type="button" id="clearProfile">مسح البيانات</button><span id="profileStatus" class="form-status"></span></div>
+          <p class="form-note">⚠️ لا يتم إرسال البيانات إلى خادم، لكنها تظهر في ذاكرة الصفحة أثناء فتحها. لا تستخدم هذا النموذج لحفظ سجلات طبية حقيقية أو معلومات حساسة.</p>
+        </form>
+      </section>
+
+      <section class="page" id="page-nutrition">
+        <div class="page-intro"><span class="pill">Nutrition</span><h2 data-ar="التغذية المتوازنة" data-en="Balanced nutrition">التغذية المتوازنة</h2><p data-ar="أفكار مرنة للتثقيف الغذائي وليست خطة علاجية أو نظامًا مقيدًا." data-en="Flexible nutrition education — not a treatment diet or restrictive plan.">أفكار مرنة للتثقيف الغذائي وليست خطة علاجية أو نظامًا مقيدًا.</p></div>
+        <div class="content-grid two-col">
+          <article class="panel"><h3 data-ar="دليل الطبق المتوازن" data-en="Balanced plate guide">دليل الطبق المتوازن</h3><div class="plate-wrap"><div class="plate"><div class="plate-half">🥦<small>خضروات وفواكه</small></div><div class="plate-quarter">🍚<small>حبوب أو نشويات</small></div><div class="plate-quarter">🥚<small>مصدر بروتين</small></div></div></div><p class="muted">مثال تعليمي عام فقط؛ قد تختلف الاحتياجات حسب الحالة الصحية وتعليمات أخصائي التغذية.</p></article>
+          <article class="panel"><h3 data-ar="أفكار وجبات مرنة" data-en="Flexible meal inspiration">أفكار وجبات مرنة</h3><div class="meal-list"><div><span>🍳</span><section><b>الإفطار</b><small>زبادي أو بديل مناسب + فاكهة + شوفان</small></section></div><div><span>🥙</span><section><b>الغداء</b><small>خضروات متنوعة + مصدر بروتين + حبوب</small></section></div><div><span>🍲</span><section><b>العشاء</b><small>شوربة خضار ووجبة جانبية متوازنة</small></section></div><div><span>🍎</span><section><b>وجبة خفيفة</b><small>فاكهة أو خيار يناسب تفضيلاتك</small></section></div></div></article>
+        </div>
+        <article class="panel condition-nutrition"><h3>استكشف معلومات التغذية حسب الحالة الصحية</h3><p class="muted">اختر حالة لعرض نقاط تثقيفية عامة وأسئلة مفيدة لمناقشتها مع المختص، وليس نظامًا علاجيًا.</p><label class="stack-form">الحالة الصحية<select id="nutritionCondition"><option value="">اختر حالة...</option><option value="diabetes">السكري</option><option value="pressure">ارتفاع ضغط الدم</option><option value="anemia">فقر الدم</option><option value="celiac">السيلياك / حساسية الجلوتين</option><option value="kidney">أمراض الكلى</option><option value="cholesterol">ارتفاع الكوليسترول</option><option value="lactose">عدم تحمّل اللاكتوز</option></select></label><div id="nutritionConditionResult" class="condition-result" aria-live="polite">ستظهر هنا معلومات عامة عند اختيار الحالة.</div></article>
+        <div class="panel note-panel"><span>ⓘ</span><p>لا يقدم الموقع حميات علاجية أو قوائم منع شخصية. تختلف الاحتياجات حسب العمر والتحاليل والأدوية ومرحلة المرض؛ لا تغيّر طعامك أو سوائلك أو علاجك اعتمادًا على هذه المعلومات وحدها.</p></div>
+      </section>
+
+      <section class="page" id="page-fitness">
+        <div class="page-intro"><span class="pill">Movement</span><h2 data-ar="النشاط والحركة" data-en="Movement & activity">النشاط والحركة</h2><p data-ar="أفكار حركة عامة قابلة للتعديل حسب قدراتك وتعليمات مختصك." data-en="General movement ideas to adapt to your abilities and clinician's instructions.">أفكار حركة عامة قابلة للتعديل حسب قدراتك وتعليمات مختصك.</p></div>
+        <div class="content-grid two-col">
+          <article class="panel"><h3 data-ar="سجّل نشاطك" data-en="Log your activity">سجّل نشاطك</h3><form id="activityForm" class="stack-form"><label>نوع النشاط<select id="activityType"><option>مشي خفيف</option><option>تمدد لطيف</option><option>حركة منزلية</option><option>نشاط آخر</option></select></label><label>المدة بالدقائق<input id="activityMinutes" type="number" min="1" max="300" placeholder="مثال: 10" required></label><button class="primary-btn">إضافة إلى سجل اليوم</button></form><p class="form-status" id="activityStatus"></p></article>
+          <article class="panel"><h3 data-ar="أفكار بسيطة" data-en="Gentle ideas">أفكار بسيطة</h3><div class="idea-list"><p>🚶 <b>المشي المريح:</b> إذا كان مناسبًا لك ومسموحًا طبيًا.</p><p>🧘 <b>تمدد لطيف:</b> دون ألم أو إجهاد، وبما يتوافق مع قدراتك.</p><p>🪑 <b>حركة أثناء الجلوس:</b> خيارات بسيطة عند محدودية الحركة، بعد التأكد من ملاءمتها.</p></div></article>
+        </div>
+        <div class="note-panel"><span>⚠️</span><p>توقف عن النشاط إذا شعرت بأعراض غير معتادة واطلب المشورة الطبية. لا تبدأ برنامجًا رياضيًا اعتمادًا على هذا الموقع وحده، خاصةً إذا كانت لديك قيود صحية أو تعليمات طبية.</p></div>
+      </section>
+
+      <section class="page" id="page-skincare">
+        <div class="page-intro"><span class="pill">Skin wellness</span><h2 data-ar="العناية بالبشرة" data-en="Skincare">العناية بالبشرة</h2><p data-ar="معلومات أساسية وروتين بسيط قابل للتعديل حسب تحمّل بشرتك." data-en="Basic information and a simple routine you can adapt to your skin's tolerance.">معلومات أساسية وروتين بسيط قابل للتعديل حسب تحمّل بشرتك.</p></div>
+        <article class="panel skin-personalizer"><h3>ابنِ روتين عناية مبدئي</h3><p class="muted">اختيار نوع البشرة يساعد على عرض نصائح عامة فقط، ولا يشخّص حالة جلدية.</p><label class="stack-form">نوع البشرة<select id="skinRoutineType"><option value="">اختاري نوع البشرة...</option><option value="dry">جافة</option><option value="oily">دهنية</option><option value="combination">مختلطة</option><option value="sensitive">حساسة</option><option value="normal">عادية</option></select></label><div id="skinRoutineResult" class="condition-result">اختاري نوع البشرة لعرض روتين لطيف قابل للتعديل.</div></article>
+        <div class="content-grid two-col">
+          <article class="panel"><h3>☀️ روتين صباحي عام</h3><ol class="routine"><li>تنظيف لطيف يناسب البشرة.</li><li>مرطب مناسب إذا كانت البشرة تحتاج إليه.</li><li>واقي شمس واسع الطيف وفق تعليمات المنتج.</li></ol></article>
+          <article class="panel"><h3>🌙 روتين مسائي عام</h3><ol class="routine"><li>إزالة مستحضرات اليوم بلطف.</li><li>استخدام منظف لطيف عند الحاجة.</li><li>مرطب بسيط تتحمله البشرة.</li></ol></article>
+        </div>
+        <div class="panel"><h3 data-ar="مكوّنات شائعة" data-en="Common ingredients">مكوّنات شائعة</h3><div class="ingredient-cards"><div><b>Glycerin</b><p>مادة جاذبة للماء تساعد على ترطيب البشرة.</p></div><div><b>Niacinamide</b><p>مكوّن شائع في منتجات دعم حاجز البشرة وتوحيد المظهر.</p></div><div><b>Hyaluronic Acid</b><p>يساعد على جذب الماء إلى الطبقة السطحية من البشرة.</p></div><div><b>Fragrance</b><p>العطور قد تهيّج بعض أنواع البشرة الحساسة.</p></div></div></div>
+        <p class="form-note">لا يشخّص الموقع الأمراض الجلدية ولا يوصي بعلاجات دوائية. استشر طبيب جلدية عند وجود أعراض مستمرة أو متفاقمة.</p>
+      </section>
+
+      <section class="page" id="page-checker">
+        <div class="page-intro"><span class="pill">Check My Product</span><h2 data-ar="فاحص المكونات" data-en="Ingredient checker">فاحص المكونات</h2><p data-ar="قارن قائمة المكونات بالنص الذي أدخلته في ملفك التجريبي." data-en="Compare an ingredient list with the information in your demo profile.">قارن قائمة المكونات بالنص الذي أدخلته في ملفك التجريبي.</p></div>
+        <div class="content-grid two-col">
+          <article class="panel"><h3 data-ar="أدخل قائمة المكونات" data-en="Paste ingredients">أدخل قائمة المكونات</h3><label class="stack-form">اسم المنتج (اختياري)<input id="productName" placeholder="اسم المنتج"></label><label class="stack-form">قائمة المكونات<textarea id="ingredientInput" rows="7" placeholder="Aqua, Glycerin, Fragrance, ..."></textarea></label><button class="primary-btn" id="checkIngredients">تحليل مبدئي</button><p class="form-note">يمكنك إدخال النص يدويًا. فحص الروابط الخارجية غير متاح في هذه النسخة.</p></article>
+          <article class="panel result-panel" id="checkerResult"><div class="empty-state"><span>⌕</span><h3>نتيجة الفحص ستظهر هنا</h3><p>أدخل قائمة المكونات ثم اضغط تحليل مبدئي.</p></div></article>
+        </div>
+        <div class="note-panel"><span>⚠️</span><p>هذا فحص نصي تجريبي للكلمات فقط، وليس تقييمًا طبيًا للحساسية أو ضمانًا لسلامة المنتج. قد تختلف أسماء المكونات أو تكون القائمة ناقصة. تحقّق دائمًا من ملصق العبوة واستشر مختصًا عند وجود حساسية معروفة.</p></div>
+      </section>
+
+      <section class="page" id="page-assistant">
+        <div class="page-intro"><span class="pill">𓂀 PHARAOH AI</span><h2 data-ar="المساعد الصحي الذكي" data-en="Pharaoh AI wellness companion">المساعد الصحي الذكي</h2><p data-ar="مساعد تثقيفي تفاعلي محلي. يشرح المعلومات العامة ويُرشدك لمتى تحتاج إلى مختص؛ ليس طبيبًا ولا يشخّص." data-en="An interactive educational assistant. It explains general health information and when to seek care; it does not diagnose.">مساعد تثقيفي تفاعلي محلي. يشرح المعلومات العامة ويُرشدك لمتى تحتاج إلى مختص؛ ليس طبيبًا ولا يشخّص.</p></div>
+        <div class="assistant-layout">
+          <aside class="doctor-picker panel"><h3 data-ar="اختر مساعدك" data-en="Choose your companion">اختر مساعدك</h3><div class="doctor-card selected" data-doctor="sara"><div class="doctor-art sara">👩🏻‍⚕️<span>✦</span></div><b>د. سارة</b><small data-ar="مساعدة عافية افتراضية" data-en="Fictional AI wellness assistant">مساعدة عافية افتراضية</small></div><div class="doctor-card" data-doctor="adam"><div class="doctor-art adam">👨🏻‍⚕️<span>✦</span></div><b>د. آدم</b><small data-ar="مساعد عافية افتراضي" data-en="Fictional AI wellness assistant">مساعد عافية افتراضي</small></div><p class="form-note">شخصيات خيالية وليست أطباء مرخّصين.</p></aside>
+          <div class="chat-panel panel"><div class="chat-header"><div class="chat-avatar" id="chatAvatar">👩🏻‍⚕️</div><div><b id="doctorName">د. سارة</b><small>مساعدة عافية افتراضية • Demo</small></div><span class="online-dot"></span></div><div class="chat-messages" id="chatMessages"><div class="message bot">أهلًا بك! يمكنني مشاركة معلومات عامة عن العادات الصحية والمكونات. ما الذي تود معرفته؟</div></div><div class="suggestions"><button data-question="اشرح لي السكري والتغذية بشكل عام">التغذية والسكري</button><button data-question="ما الفرق بين الجلسرين والنياسيناميد؟">مكونات البشرة</button><button data-question="ما المعلومات التي يجب معرفتها عن فقر الدم؟">معلومات عن الأنيميا</button><button data-question="متى أحتاج لاستشارة مختص؟">متى أستشير مختصًا؟</button></div><form id="chatForm" class="chat-input"><input id="chatInput" placeholder="اكتب سؤالك هنا..." autocomplete="off"><button class="primary-btn">إرسال</button></form></div>
+        </div>
+        <div class="note-panel"><span>ⓘ</span><p>المساعد يقدّم ردودًا تجريبية محدودة ومعلومات عامة فقط. لا يشخّص، ولا يصف أدوية، ولا يوصي بتغيير علاج. في الأعراض الشديدة أو الطارئة، اطلب الرعاية الطبية العاجلة المناسبة.</p></div>
+      </section>
+
+      <section class="page" id="page-library">
+        <div class="page-intro"><span class="pill">Learn</span><h2 data-ar="المكتبة الصحية" data-en="Health library">المكتبة الصحية</h2><p data-ar="مقدمات تعليمية عامة — ليست بديلًا عن التقييم الطبي." data-en="General educational introductions — not a substitute for medical assessment.">مقدمات تعليمية عامة — ليست بديلًا عن التقييم الطبي.</p></div>
+        <div class="library-grid">
+          <article class="panel library-card"><span>🫀</span><h3>صحة القلب</h3><p>معلومات عامة عن العادات الداعمة لصحة القلب وأهمية المتابعة الطبية.</p><small>استشر المختص لتحديد ما يناسب حالتك.</small></article>
+          <article class="panel library-card"><span>🩸</span><h3>فقر الدم</h3><p>مقدمة عن فقر الدم وأهمية معرفة السبب عبر التقييم والفحوصات المناسبة.</p><small>لا تبدأ مكملات الحديد دون توجيه طبي.</small></article>
+          <article class="panel library-card"><span>🧠</span><h3>الصحة النفسية</h3><p>العافية النفسية جزء من الصحة العامة، وطلب الدعم خطوة مهمة.</p><small>اطلب مساعدة مختصة عند الحاجة.</small></article>
+          <article class="panel library-card"><span>🫘</span><h3>صحة الكلى</h3><p>تختلف الاحتياجات الغذائية والسوائل حسب الحالة ووظائف الكلى.</p><small>اتبع خطة فريقك الطبي.</small></article>
+          <article class="panel library-card"><span>🌿</span><h3>صحة الجهاز الهضمي</h3><p>الأعراض والأسباب متعددة، وقد تختلف الاستجابة للأطعمة بين الأشخاص.</p><small>الأعراض المستمرة تستحق تقييمًا طبيًا.</small></article>
+          <article class="panel library-card"><span>☀️</span><h3>العناية بالجلد</h3><p>التنظيف اللطيف والترطيب والحماية من الشمس من أساسيات العناية العامة.</p><small>الطفح أو التهيج المستمر يحتاج تقييمًا.</small></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-diseases"><div class="page-intro"><span class="pill">𓋹 HEALTH KNOWLEDGE</span><h2>دليل الحالات الصحية</h2><p>معلومات تمهيدية عامة مع تنبيهات حول الطعام والمتابعة؛ ليست تشخيصًا ولا خطة علاج.</p></div><div class="disease-grid">
+        <article class="panel disease-card"><span>🩸</span><h3>فقر الدم</h3><p>له أسباب متعددة منها نقص الحديد أو B12 أو الفولات وأسباب أخرى؛ لا يكفي التعب وحده لتحديد السبب.</p><b>معلومة مهمة</b><small>الشاي والقهوة مع الوجبات قد يقللان امتصاص الحديد غير الهيمي. لا تبدأ مكمل الحديد دون توجيه طبي.</small><b>اسأل المختص</b><small>ما نوع فقر الدم؟ وهل أحتاج CBC أو Ferritin؟</small></article>
+        <article class="panel disease-card"><span>🩺</span><h3>السكري</h3><p>تنظيم الطعام والمتابعة يختلفان حسب نوع السكري والعلاج.</p><b>انتبه</b><small>العصائر والمشروبات المحلاة قد ترفع السكر بسرعة. لا تغيّر الدواء أو الإنسولين ولا تتخطَّ الوجبات اعتمادًا على نصيحة عامة.</small><b>اسأل المختص</b><small>كيف أوازن الكربوهيدرات؟ وما خطة التعامل مع انخفاض السكر؟</small></article>
+        <article class="panel disease-card"><span>❤️</span><h3>ارتفاع ضغط الدم</h3><p>قد لا يسبب أعراضًا واضحة؛ القياس الصحيح والمتابعة مهمان.</p><b>انتبه</b><small>الصوديوم قد يوجد بكثرة في المخللات واللحوم المصنعة والشوربات الجاهزة. لا توقف الدواء عند تحسن القراءة.</small><b>اسأل المختص</b><small>ما هدف الضغط المناسب؟ وكيف أقيسه في المنزل؟</small></article>
+        <article class="panel disease-card"><span>🫘</span><h3>أمراض الكلى</h3><p>احتياجات البروتين والبوتاسيوم والفوسفور والسوائل تختلف حسب التحاليل ومرحلة المرض.</p><b>انتبه</b><small>لا تتبع قوائم منع عامة للبوتاسيوم أو السوائل؛ قد تكون غير مناسبة لحالتك.</small><b>اسأل المختص</b><small>هل أحتاج تحديد السوائل أو بعض المعادن؟</small></article>
+        <article class="panel disease-card"><span>🥛</span><h3>عدم تحمّل اللاكتوز</h3><p>تختلف القدرة على تحمّل اللاكتوز بين الأشخاص.</p><b>انتبه</b><small>عدم التحمل ليس هو نفسه حساسية بروتين الحليب. لا تستبعد مجموعات غذائية كاملة دون بدائل مناسبة.</small><b>اسأل المختص</b><small>ما البدائل التي توفر الكالسيوم؟</small></article>
+        <article class="panel disease-card"><span>🌾</span><h3>مرض السيلياك</h3><p>مرض مناعي ذاتي يتطلب تجنب الجلوتين بدقة بعد تأكيد التشخيص.</p><b>انتبه</b><small>التلوث التبادلي في أدوات التحضير مهم. لا تبدأ حمية خالية من الجلوتين قبل الفحوصات دون مناقشة الطبيب.</small><b>اسأل المختص</b><small>كيف أقرأ الملصقات وأتجنب التلوث التبادلي؟</small></article>
+        <article class="panel disease-card"><span>🫀</span><h3>ارتفاع الكوليسترول</h3><p>نوع الدهون والعوامل الوراثية والحالة الصحية تؤثر في الخطة.</p><b>انتبه</b><small>الدهون المتحولة وبعض الأطعمة العالية بالدهون المشبعة قد تؤثر في LDL. لا توقف الدواء دون مراجعة.</small><b>اسأل المختص</b><small>ما معنى LDL وHDL والدهون الثلاثية؟</small></article>
+        </div><div class="note-panel"><span>⚠️</span><p>المعلومات للتثقيف وليست بديلًا عن الطبيب. اطلب رعاية عاجلة عند ألم الصدر أو صعوبة التنفس الشديدة أو الإغماء أو علامات السكتة الدماغية.</p></div></section>
+      <footer class="footer"><span>© 2026 Pharaoh AI • HealthCare Companion</span><span data-ar="نسخة تجريبية تعليمية • ليست خدمة طبية" data-en="Educational demo • Not a medical service">نسخة تجريبية تعليمية • ليست خدمة طبية</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
